@@ -1,0 +1,114 @@
+from pathlib import Path
+
+# from tkinter import *
+# Explicit imports to satisfy Flake8
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
+
+
+OUTPUT_PATH = Path(__file__).parent
+ASSETS_PATH = OUTPUT_PATH / Path(r"E:\Tkinter-Designer-master\build\assets\frame0")
+
+
+def relative_to_assets(path: str) -> Path:
+    return ASSETS_PATH / Path(path)
+
+
+window = Tk()
+
+window.geometry("1280x720")
+window.configure(bg = "#FFFFFF")
+
+
+canvas = Canvas(
+    window,
+    bg = "#FFFFFF",
+    height = 720,
+    width = 1280,
+    bd = 0,
+    highlightthickness = 0,
+    relief = "ridge"
+)
+
+canvas.place(x = 0, y = 0)
+image_image_1 = PhotoImage(
+    file=relative_to_assets("image_1.png"))
+image_1 = canvas.create_image(
+    640.0,
+    360.0,
+    image=image_image_1
+)
+
+canvas.create_rectangle(
+    0.0,
+    457.0,
+    1280.0,
+    782.0,
+    fill="#09979D",
+    outline="")
+
+canvas.create_rectangle(
+    126.0,
+    54.0,
+    1153.0,
+    644.0,
+    fill="#FFFFFF",
+    outline="")
+
+canvas.create_rectangle(
+    332.0,
+    16.0,
+    908.0,
+    96.0,
+    fill="#09979D",
+    outline="")
+
+canvas.create_text(
+    563.0,
+    33.0,
+    anchor="nw",
+    text="PILEK",
+    fill="#FFFFFF",
+    font=("Inter Bold", 40 * -1)
+)
+
+button_image_1 = PhotoImage(
+    file=relative_to_assets("button_25.png"))
+button_25 = Button(
+    image=button_image_1,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_25 clicked"),
+    relief="flat"
+)
+button_25.place(
+    x=170.0,
+    y=374.0,
+    width=939.0,
+    height=209.0
+)
+
+button_image_2 = PhotoImage(
+    file=relative_to_assets("button_26.png"))
+button_26 = Button(
+    image=button_image_2,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_26 clicked"),
+    relief="flat"
+)
+button_26.place(
+    x=170.0,
+    y=139.0,
+    width=939.0,
+    height=209.0
+)
+
+image_image_2 = PhotoImage(
+    file=relative_to_assets("image_2.png"))
+image_2 = canvas.create_image(
+    92.0,
+    74.0,
+    image=image_image_2
+)
+window.resizable(False, False)
+window.mainloop()
