@@ -1,0 +1,21 @@
+{
+    "obat_dewasa" : {
+                "Pusing": {"Paracetamol": 5000, "Bodrex": 3500},
+                "Demam": {"Paracetamol": 5000, "Ibuprofen": 8000},
+                "Batuk": {"OBH Combi": 10000, "Siladex": 6000},
+                "Pilek": {"Mixagrip": 9000, "Neozep forte": 8500},
+                "Diare": {"Oralit": 5000, "Entrostop": 12500},
+                "Flu": {"Neozep forte": 8500, "Mixagrip flu": 10000},
+                "Radang": {"strepsils": 15000, "Troches": 25000}
+            },
+    "obat_anak": {
+                "Pusing": {"Paracetamol (Anak)": 15000, "Ibuprofen (Anak)": 7000},
+                "Demam": {"Paracetamol (Anak)": 15000, "Ibuprofen (Anak)": 20000},
+                "Batuk": {"Hufagrip (Anak)": 15000, "OBH Combi (Anak)": 20000},
+                "Pilek": {"Ibuprofen (Anak)": 7000, "Sterimar (Anak)": 45000},
+                "Diare": {"zinc (Anak)": 15000, "Oralit (Anak)": 6000},
+                "Flu": {"Tempra (Anak)": 5000, "OBH Junior (Anak)": 15000},
+                "Radang": {"Troches (Anak)": 25000, "Proris (Anak)": 26000}
+            }
+    
+}
